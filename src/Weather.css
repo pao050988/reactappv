@@ -1,0 +1,10 @@
+.Weather {
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+  margin-left: 10%;
+  padding-left: 10px;
+}
+
+ul {
+  list-style: none;
+}
