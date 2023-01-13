@@ -1,16 +1,29 @@
 import React from "react";
 import "./Weather.css";
+import App from "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
 
 export default function Weather() {
   return (
     <div className="Weather">
       <form>
-        <input
-          type="Search"
-          placeholder="Enter a city.."
-          className="form-control"
-        />
-        <input type="submit" value="Search" className="btn btn-primary" />
+        <div class="row">
+          <div class="col-9">
+            <input
+              type="Search"
+              placeholder="Enter a city.."
+              className="form-control"
+              autoFocus="on"
+            />
+          </div>
+        </div>
+        <div class="col-3">
+          <input
+            type="submit"
+            value="Search"
+            className="btn btn-primary searchButton w-100"
+          />
+        </div>
       </form>
       <h1>New York, NY, USA</h1>
       <ul>
@@ -19,12 +32,18 @@ export default function Weather() {
       </ul>
       <div className="row">
         <div className="col-6">
-          <img
-            src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-            alt="partlycloudy"
-          />
-          6°C
+          <div>
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              alt="partlycloudy"
+            />
+          </div>
+          <div>
+            <span className="temperature">6</span>
+            <span className="unit">°C</span>
+          </div>
         </div>
+
         <div className="col-6">
           <ul>
             <li>Precipitation:15%</li>
