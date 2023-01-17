@@ -1,5 +1,5 @@
 import Weather from "./Weather";
-import app from "./App.css";
+import Appstyle from "./Appstyle.css";
 
 export default function App() {
   return (
