@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Weather.css";
-import App from "./App.css";
 
 import FormattedDate from "./FormattedDate";
 
