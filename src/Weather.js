@@ -31,7 +31,8 @@ export default function Weather(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    search();
+    search(city);
+    
     // search for a city
   }
 
@@ -54,7 +55,7 @@ export default function Weather(props) {
               />
             </div>
           </div>
-          <div class="col-3">
+          <div className="col-3">
             <input
               type="submit"
               value="Search"
@@ -66,6 +67,7 @@ export default function Weather(props) {
       </div>
     );
   } else {
+    search();
     return "loading";
   }
 }

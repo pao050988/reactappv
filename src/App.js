@@ -4,7 +4,7 @@ export default function App() {
   return (
     <div className="App">
       <Weather defaultCity="New York" />
-      <footer class="link">
+      <footer className="Link">
         {" "}
         This project is open source code on{" "}
         <a href="https://github.com/pao050988/reactappv">github</a> and is
