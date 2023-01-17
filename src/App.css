@@ -1,10 +1,9 @@
 .App {
-  margin: 10px auto;
-  max-width: 650px;
+  max-width: 600px;
+  margin: 30px auto;
 }
 
-.link {
+.App footer {
   font-size: 11px;
   margin: 10px 0;
-  
 }
