@@ -4,7 +4,16 @@
 }
 
 .App footer {
-  font-size: 11px;
-  margin: 10px 0;
+  font-size: 12px;
   text-align: center;
+  font-family: "DynaPuff", cursive;
+  margin-top: 0 auto;
+}
+
+body {
+  background: radial-gradient(
+    592px at 48.2% 50%,
+    rgba(255, 255, 249, 0.6) 0%,
+    rgb(160, 199, 254) 74.6%
+  );
 }
