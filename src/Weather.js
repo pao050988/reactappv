@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Weather.css";
 import Weatherinfo from "./Weatherinfo";
 
-
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -45,23 +44,27 @@ export default function Weather(props) {
     return (
       <div className="Weather">
         <form onSubmit={handleSubmit}>
-          <div class="row">
-            <div class="col-9">
+          <div className="row">
+            <div className="col-9">
               <input
+                className="form-control form-control-override"
                 type="Search"
                 placeholder="Enter a city.."
-                className="form-control"
+                aria-label="Search"
+                autoComplete="off"
                 autoFocus="on"
                 onChange={handleCityChange}
               />
             </div>
-          </div>
-          <div className="col-3">
-            <input
-              type="submit"
-              value="Search"
-              className="btn btn-primary searchButton w-100"
-            />
+
+            <div className="col-3">
+              <button
+                className="btn btn-primary w-100 button-override"
+                type="submit"
+              >
+                Search
+              </button>
+            </div>
           </div>
         </form>
         <Weatherinfo data={weatherData} />
